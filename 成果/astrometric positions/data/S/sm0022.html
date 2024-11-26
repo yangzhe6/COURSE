@@ -1,0 +1,85 @@
+<HTML><HEAD><TITLE>sm0022</TITLE></HEAD><PRE>
+Contents.
+      planet: 6 - Saturn
+  satellites: S1-Mimas      : 15,
+              S2-Enceladus  :119,
+              S3-Tethys     :271,
+              S4-Dione      :212,
+              S5-Rhea       :255,
+              S6-Titan      :261,
+              S7-Hyperion   :192,
+              S8-Iapetus    :189
+total number: 304
+        type: relative
+       dates: 1995-1997
+ observatory: 950 - La Palma
+
+Reference.
+   Harper D., Beurle K.,I.P.Williams, Murray C.D., Taylor D.B.,
+   Fitzsimmons A., Cartwright I.M. (1999)
+   CCD astrometry of Saturn's satellites in 1995 and 1997
+   Astron. Astrophys. Suppl. Ser. V. 136. P. 257.
+   <A HREF="../../../../cgi-bin/ObsArticleByCode.cgi?code=1999A&AS__136__257H">1999A&AS__136__257H</a>
+
+Informations.
+         relative to: Frame
+     reference frame: astrometric
+     centre of frame: geocentre
+    epoch of equinox: no information
+          time scale: UTC
+           reduction: no information
+         coordinates: CCD image pixels
+    diff. refraction: no information
+            receptor: CCD
+           telescope: 1-metre Jacobus Kapteyn Telescope
+           observers: Harper D., Beurle K.,I.P.Williams, Murray C.D.,
+                      Taylor D.B., Fitzsimmons A., Cartwright I.M.
+ data included in standard data file: no
+
+Comments. 
+            Total number: 304 (CCD frames)
+            On the 304 lines of the data-file are put the 1514
+                      positions of the satellites from the CCD frame.
+            Individual files can be fetched directly from:
+            ftp://cdsarc.u-strasbg.fr/cats/J/A+AS/136/257
+            The catalogue can be queried from:
+            http://vizier.u-strasbg.fr/cgi-bin/VizieR?-source=J/A+AS/136/257
+          evaluation: From abstract: Analysis of the data as inter-satellite
+                      positions shows that the observations of Tethys, Dione,
+                      Rhea and Titan have root-mean-square residuals
+                      of 0.08 arc-seconds in 1995 and 0.10 arc-seconds
+                      in 1997.
+
+Format.
+ Byte-by-byte Description of file: *dat.txt
+ -----------------------------------------------------------------------------
+   Bytes Format Units  Label    Explanations
+ -----------------------------------------------------------------------------
+   1-  4  I4    yr     OBS.Y    Year of the observation (1)
+   6-  7  I2   "month" OBS.M    Month of the observation (1)
+   9- 17  F9.6  d      OBS.D    Day of the observation (1)
+  19- 23  F5.1  s      Exp      Length of the exposure;
+  25- 32 8I1    ---    Flags    [0/1] Boolean flags indicating presence (1)
+                                 or absence (0) of each satellite in the image
+  33- 40  F8.2  pix    xiMimas  ? Column coordinate xi of Mimas, if present
+  41- 48  F8.2  pix    etaMimas ? Row coordinate eta of Mimas, if present
+  49- 56  F8.2  pix    xiEnc    ? Column coordinate xi of Enceladus,if present
+  57- 64  F8.2  pix    etaEnc   ? Row coordinate eta of Enceladus, if present
+  65- 72  F8.2  pix    xiTethys ? Column coordinate xi of Tethys, if present
+  73- 80  F8.2  pix   etaTethys ? Row coordinate eta of Tethys, if present
+  81- 88  F8.2  pix    xiDione  ? Column coordinate xi of Dione, if present
+  89- 96  F8.2  pix    etaDione ? Row coordinate eta of Dione, if present
+  97-104  F8.2  pix    xiRhea   ? Column coordinate xi of Rhea, if present
+ 105-112  F8.2  pix    etaRhea  ? Row coordinate eta of Rhea, if present
+ 113-120  F8.2  pix    xiTitan  ? Column coordinate xi of Titan, if present
+ 121-128  F8.2  pix    etaTitan ? Row coordinate eta of Titan, if present
+ 129-137  F9.2  pix    xiHyp    ? Hyperion {xi} column coordinate, if present
+ 138-146  F9.2  pix    etaHyp   ? Hyperion {eta} row coordinate, if present
+ 147-154  F8.2  pix    xiIap    ? Iapetus {xi} column coordinate, if present
+ 155-162  F8.2  pix    etaIap   ? Iapetus {eta} row coordinate, if present
+ -----------------------------------------------------------------------------
+ Note (1): U.T.C. time of the start of the exposure
+ Note (2): Add half of this value to the start date to obtain the
+           mid-exposure time
+ ------------------------------------------------------------------------
+</PRE></BODY></HTML>

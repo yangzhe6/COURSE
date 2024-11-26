@@ -1,0 +1,90 @@
+<HTML><HEAD><TITLE>sm0020</TITLE></HEAD><PRE>
+Contents.
+      planet: 6 - Saturn
+  satellites: S1-Mimas     : 55,
+              S2-Enceladus :112,
+              S3-Tethys    :118,
+              S4-Dione     :135,
+              S5-Rhea      :137,
+              S7-Hyperion  :136,
+              S8-Iapetus   :120
+total number: 813
+        type: relative
+       dates: 1982-1988
+ observatory: 874 - Itajuba (Laboratorio Nacional de Astrofisica)
+
+Reference.
+   Veiga C.H., Vieira Martins R. (1999)
+   Photographic positions for the first eight satellites
+   of Saturn.
+   Astron. Astrophys. Suppl. Ser. V. 139. P. 305.
+   <A HREF="../../../../cgi-bin/ObsArticleByCode.cgi?code=1999A&AS__139__305V">1999A&AS__139__305V</a>
+
+Informations.
+         relative to: S6-Titan : 813
+     reference frame: astrometric
+     centre of frame: geocentre
+    epoch of equinox: J2000
+          time scale: UTC
+           reduction: no information
+         coordinates: relatives
+    diff. refraction: no information
+            receptor: photographic
+           telescope: no information
+           observers: Veiga C.H., Vieira Martins R.
+ data included in standard data file: no
+
+Comments.
+          Individual files can be fetched directly from:
+          ftp://cdsarc.u-strasbg.fr/cats/J/A+AS/139/305
+          The catalogue can be queried from:
+          http://vizier.u-strasbg.fr/cgi-bin/VizieR?-source=J/A+AS/139/305
+          evaluation: The differences  O-C(X), O-C(Y) are published
+                      in the article. For these values one have:
+                                                     X         Y
+                      M. (mean)                   -0.038"   -0.078"
+                      R.M.S. (root mean square)    0.389"    0.366"
+                      The differences  O-C(X)e, O-C(Y)e were also
+                      calculated by N.Emelianov with the theory by
+                      Harper & Taylor.
+                      With these O-C one have
+                                                     X         Y
+                      M. (mean)                   -0.070"  -0.084"
+                      R.M.S. (root mean square)    0.519"   0.392"
+
+Format.
+Byte-by-byte Description of file: *dat.txt
+------------------------------------------------------------------------------
+  Bytes Format Units  Label   Explanations
+------------------------------------------------------------------------------
+  1-  3  I3    ---    Opp     Opposition year code number (105=1989, 111=1988)
+  5-  8  I4    yr     Obs.Y   Year of observation
+ 10- 11  I2    ---    Obs.M   Month of observation
+ 13- 21  F9.6  d      Obs.D   UTC date of observation (DD.dddddd)
+ 23- 26  F4.1  s      ET-UTC  ET-UTC to the nearest tenth of second
+ 28- 30  I3    ----   Code    [874] Observatory code
+                               (874: Laboratorio Nacional de Astrofisica)
+ 32- 33  A2    ---    Ref     [**] Reference code (no entries)
+     35  I1    ---    ObsType [2] Observation type ({Delta}RA, {Delta}DE)
+ 37- 38  I2    ---    Sat     Subject satellite, reference satellite (1)
+     40  I1    ---    Obs1    [0/1] Presence flag for first observation
+                                     of pair (2)
+     41  I1    ---    Obs2    [0/1] Presence flag for second observation
+                                     of pair (2)
+ 43- 53  F11.6 s      DRA     Position {Delta}RA
+ 55- 65  F11.6 arcsec DDE     Position {Delta}DE
+     67  I1    ---    Sys     [2] Reference system (J2000.0)
+     69  I1    ---    Frame   [1] Reference frame (geocentric)
+ 71- 75  F5.2  arcsec Res1    (O-C) {Delta}RAcosDE residual for first
+                                observation of pair
+ 77- 81  F5.2  arcsec Res2    (O-C) {Delta}RAcosDE residual for second
+                                observation of pair
+------------------------------------------------------------------------------
+Note (1): Satellite numbers used in the catalogue conform to the conventional
+           IAU numbering system. 0 is used to denote the planet.
+           1: Mimas; 2:Enceladus; 3: Tethys; 4: Dione; 5: Rhea; 6: Titan;
+           7: Hyperion; 8: Iapetus; 9: Phoebe
+Note (2): 0: observation absent
+          1: observation present
+
+</PRE></BODY></HTML>

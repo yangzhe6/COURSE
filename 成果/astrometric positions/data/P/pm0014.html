@@ -1,0 +1,92 @@
+<HTML>
+
+<HEAD>
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+  <title>pm0014</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <style>
+    .MathJax { font-size: 1.1em !important; }
+  </style>  
+</HEAD>
+
+<PRE>
+Contents.
+      planet: 9 - Pluto
+  satellites: 1 - P1 Charon : 28
+total number: 28
+        type: relative
+       dates: 1991-1993
+ observatory: 250 - HST
+
+Reference.
+   Null, G. W.; Owen, W. M., Jr.; Synnott, S. P. (1993)
+   Masses and Densities of Pluto and Charon.
+   The Astronomical Journal. 1993. V. 105. P. 2319-2335.
+   <A HREF="../../../../cgi-bin/ObsArticleByCode.cgi?code=1993AJ____105_2319N">1993AJ____105_2319N</A>
+   
+   Null, G. W.; Owen, W. M., Jr. (1996)
+   Charon/Pluto Mass Ratio Obtained with HST CCD Observations in 1991 and 1993.
+   The Astronomical Journal. 1996. V. 111. P. 1368-1381.
+   <A HREF="../../../../cgi-bin/ObsArticleByCode.cgi?code=1996AJ____111_1368N">1996AJ____111_1368N</A>
+
+Informations.
+         relative to: Pluto
+     reference frame: astrometric
+     centre of frame: topocentre
+    epoch of equinox: J2000
+          time scale: UTC
+           reduction: distortion and albedo corrections for Pluto,
+                      distortion and image overlap corrections for Charon
+         coordinates: sample and line coordinates on the CCD image
+                      as well as relative coordinates of Charon deduced from
+                      published data.
+    diff. refraction: no information
+            receptor: CCD
+           telescope: WFC CCD 1 of the HST
+           observers: Null, G. W.; Owen, W. M., Jr.
+
+ data included in standard data file: no
+
+Comments.
+  1. The mutual distance <i>s</i> (in arcseconds) between Charon and Pluto can be obtained as:
+     </pre>
+     \begin{equation*}
+        s=m\times\sqrt{(X_C-X_P)^2+(Y_C-Y_P)^2}
+     \end{equation*}
+     <pre>
+     where: m = 0.1016 arcsec/pixel is the scale for the WFC,
+           (X<sub>P</sub>, Y<sub>P</sub>) and (X<sub>C</sub>, Y<sub>C</sub>) are pixel coordinates of Pluto and Charon on the CCD frame (see the values X_P, Y_P, X_C, Y_C in the data).
+  2. Charon's position angle <i>P</i> can be obtained as:
+     </pre>
+       \begin{equation*}
+          P=P_{axis}-225^\circ+\frac{180^\circ}{\pi}\arctan\left(\frac{Y_C-Y_P}{X_C-X_P}\right)
+       \end{equation*}
+     <pre>
+     where P<sub>axis</sub> is the WFC roll angle (see the value P_axis in the data) measured in degrees. 
+  3. Values for s and P obtained in this way are given in the data file.
+
+Format.
+  1. Year of the date of observation
+  2. Month of the date of observation
+  3. Day of the date of observation 
+  4. Hour (h) of the date of observation
+  5. Minute (m) of the date of observation 
+  6. Seconds (s) of the date of observation with decimals (UTC)
+  7. Geocentric x-coordinate of the HST (X, km)
+  8. Geocentric y-coordinate of the HST (Y, km)
+  9. Geocentric z-coordinate of the HST (Z, km)
+ 10. x-coordinate of Pluto in the image (X_P, pixels)
+ 11. y-coordinate of Pluto in the image (Y_P, pixels)
+ 12. x-coordinate of Charon in the image (X_C, pixels)
+ 13. y-coordinate of Charon in the image (Y_C, pixels)
+ 14. WFC roll angle, i.e. position angle of the HST's V3 axis (P_axis, degrees)
+ 15. The mutual apparent topocentric (HST) distance Charon-Pluto, s, arcsec
+ 16. The mutual apparent topocentric (HST) position angle of Charon relative to Pluto, P, degrees
+ 
+-------------------------------------------------------------------------------------------------------------
+Year   Day   Time          X       Y      Z        X_P     Y_P      X_C     Y_C     P_axis    s         P
+  Month    h  m  s         km      km     km      pixels  pixels   pixels  pixels   degrees  arcsec   degrees
+-------------------------------------------------------------------------------------------------------------
+
+</PRE></BODY></HTML>

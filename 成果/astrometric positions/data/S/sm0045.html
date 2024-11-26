@@ -1,0 +1,103 @@
+<HTML><HEAD><TITLE>sm0045</TITLE></HEAD><PRE>
+Contents.
+      planet: 6 - Saturn
+  satellites: S1-Mimas    : 361
+              S2-Enceladus: 427
+              S3-Tethys   : 489
+              S4-Dione    : 483
+              S6-Titan    : 218
+              S7-Hiperion :  74
+              S8-Iapetus  :   7
+total number: 2059
+        type: relative
+       dates: 1995-1999
+ observatory: 874 - Itajuba (Laboratorio Nacional de Astrofisica, Brazil)
+
+Reference.
+   Veiga C. H., Vieira Martins R., Vienne A., Thuillot W., Arlot J.-E. (2003)
+   CCD astrometric observations of Saturnian satellites.
+   Astronomy and Astrophysics. V. 400. P. 1095-1101. 
+   <A HREF="../../../../cgi-bin/ObsArticleByCode.cgi?code=2003A&A___400_1095V">2003A&A___400_1095V</a>
+
+Informations.
+         relative to: S3-Tethys   :   20
+                      S4-Dione    :  151
+                      S5-Rhea     : 1863
+                      S6-Titan    :   25
+     reference frame: astrometric
+     centre of frame: geocentre
+    epoch of equinox: J2000
+          time scale: UTC
+           reduction: see reference
+         coordinates: X, Y
+    diff. refraction: removed
+            receptor: CCD
+           telescope: 1.6 m Ritchey-Chretien reflector, F=15.8 m.
+           observers: Veiga C. H., Vieira Martins R.
+ data included in standard data file: no
+
+Comments.
+
+Format.
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label    Explanations
+--------------------------------------------------------------------------------
+   1-  3  I3    ---     Opp      Opposition year code number
+                                  (1=1874 to 122=1999)
+   5-  8  I4    yr      Obs.Y    Year of Observation
+  10- 11  I2    ---     Obs.M    Month of observation
+  13- 22  F10.7 d       Obs.D    UTC date of observation (DD.ddddddd)
+  24- 29  F6.3  s       TT-UTC   TT-UTC to the nearest tenth of second
+  31- 33  I3    ---     Obs      [874] Observatory code 
+                                  (Laboratorio Nacional de Astrofisica, Brazil)
+  35- 37  I3    ---     Ref      [303] Reference code catalog (we have chosen
+                                        303 for the present observations)
+      39  I1    ---     ObsType  [0/1] Observation type
+                                    0=RA, DE; 1={Delta}RA*cosDE, {Delta}DE (1)
+  41- 43  A3    ---     Objs     Subject satellite, reference satellite (2)
+      45  I1    ---   f_Obs1     [1] Flag of presence of the first coordinate
+      46  I1    ---   f_Obs2     [1] Flag of presence of the second coordinate
+  49- 60  F12.7 ---     Obs1     First coordinate (3)
+  63- 74  F12.7 ---     Obs2     Second coordinate (3)
+      76  I1    ---     Sys      [0/2] Reference system (4)
+      78  I1    ---     Frame    [0/2] Reference frame (5)
+  80- 86  F7.3  arcsec  O-C1     ?=999.999 First residual of observations
+                                            computed with TASS1.7 (6)
+  88- 94  F7.3  arcsec  O-C2     ?=999.999 Second residual of observations
+                                            computed with TASS1.7 (6)
+      97  I1    ---     Nsat     Number of the satellite used as reference in
+                                  the computation of O-C (2)
+     100  I1    ---   n_NSerie   [0/1] 0 for no meaning and 1 when the frame was
+                                  not used in the computation of the scale and
+                                  the direction of the series
+ 102-103  I2    ---     NSerie   Number of the series, the scale and orientation
+                                 are the same for all observations of one series
+ 105-113  F9.3  pix     Xpos     ?=99999.999 Original X coordinate
+ 115-123  F9.3  pix     Ypos     ?=99999.999 Original Y coordinate
+--------------------------------------------------------------------------------
+Note (1): Observation type:
+      0: RA, DE
+      1: {Delta}RA*cosDE, {Delta}DE
+      2: {Delta}RA, {Delta}DE
+      3: position angle, separation
+Note (2): Satellite numbers:
+      0 for Saturn,
+      1 to 8 for S1 to S8, 12 for Helene, 13 for Telesto, 14 for Calypso,
+      C for the center of the plate which is not a physical object.
+Note (3): Obs1 and Obs2 are in arcsec but in degree when Sat = C*
+      When Obstype=0, Obs1=RA, Obs2=DE
+      When ObsType=1, Obs1={Delta}RA*cosDE,Obs2={Delta}DE
+Note (4): Reference system code:
+      0: mean equator and equinox B1950,
+      1: true equator and equinox of date of observation,
+      2: mean equator and equinox of J2000
+Note (5): Reference frame code:
+      0: topocentric,
+      1: geocentric,
+      2: heliocentric
+Note (6): Residuals of observations:
+      999.999 when the residuals are not computed
+      888.888 when the residuals are greater than 100 in absolute value
+--------------------------------------------------------------------------------
+
+</PRE></BODY></HTML>

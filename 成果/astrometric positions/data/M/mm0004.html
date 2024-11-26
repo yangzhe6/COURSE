@@ -1,0 +1,96 @@
+<HTML><HEAD><TITLE>mm0004</TITLE></HEAD><PRE>
+Contents.
+      planet: 4 - Mars
+  satellites: M2 - Deimos: 5
+total number: 5
+        type: relative
+       dates: 1884-1884
+ observatory: 7 - Paris
+
+Reference.
+ Henry Paul, Henry Prosper (1884)
+ Observations faites a l'Observatoire de Paris
+ (equatorial de 0.38 m; tour de l'Est).
+ Bulletin Astronomique, 1-e serie. V. 1. P. 15-15.
+
+Informations.
+         relative to: 2 - Deimos relative to Mars:  5
+     reference frame: astrometric
+     centre of frame: topocentre
+    epoch of equinox: 1 - true equator and equinox of date
+          time scale: UTC (UT1)
+           reduction: 0 - no information
+         coordinates: 0 - separation and/or position angle
+    diff. refraction: no information
+            receptor: micrometer
+           telescope: Equatorial, D = 0.38 m
+           observers: 99 - Henry MM
+ data included in standard data file: no
+
+Comments.
+                    no information
+
+Format.
+  1. Acceptance code: 1 Accepted data, 0 - Deleted (bad quality)
+  2. Opposition number: 1 - 1877, ..., 50 - 1982
+  3. Year   of the moment of observation
+  4. Month  of the moment of observation
+  5. Day    of the moment of observation with decimals
+  6. (ET-UTC) in tenths of second
+  7. Observer code
+  8. Observatory N
+  9. Observed body: 1 - Phobos relative to Mars
+                    2 - Deimos relative to Mars
+                    3 - Deimos relative to Phobos
+ 10. Obs. type: 0 - separation and/or position angle
+                1 - differential R.A.(*cosine(dec.))
+                    and/or differential declination
+                2 - Delta alpha or Delta delta
+ 11. Presence flag for 1st value of pair:
+                0 - value absent
+                1 - value present
+ 12. Presence flag for 2st value of pair:
+                0 - value absent
+                1 - value present
+ 13. Ref. system: 1 - true equator and equinox of date
+                  2 - mean equator and equinox of B1900
+                  3 - mean equator and equinox of B1950
+                  4 - mean equator and equinox of J2000
+ 14. 1st value of observation, seconds of arc (0.0 if absent), see note 4
+ 15. 2st value of observation, seconds of arc or degrees if position angle
+                  (0.0 if absent), see note 4
+ 16. 1-sigma noise in 1st value of pair (seconds of arc)
+                  (0.0 if absent), see notes 3, 4
+ 17. 1-sigma noise in 2nd value of pair (seconds of arc)
+                  (0.0 if absent), see notes 3, 4
+ 18. Observation correction (reduction) code:
+                  0 - not corrected or no information
+                  1 - corrected for phase,
+                  2 - corrected for differential refraction
+                  3 - both 1 and 2
+ Notes:
+ Note 1. The units for the observations are seconds of arc except for
+         position angle when the unit is degrees east of north in the
+         range 0 - 360.
+ Note 2. The units for the observation noise are always seconds of arc.
+         For a position angle p, the noise refers to the product of the
+         error in p and the separation angle.
+ Note 3. In the ESOC system, when the noise is greater or equal to 99.0
+         the corresponding observation is of bad quality and is not used
+         in the determination of the orbit but its residual is computed
+         and printed.
+ Note 4. When the observation is either Delta a or Delta d the columns
+         normally used for the complementary observation are used to
+         store the position angle, theta. Also, the columns normally
+         used to store the noise of thre complementary observation
+         contain 0.0.
+
+-------------------------------------------------------------------------------
+                    ET-UTC       Body
+ N opp.                    Observer      Ref.s.
+     Year Month Day          Observatory                     Sigma 1  Sigma 2
+Accept.                            Presence                                Corr.
+code                                v1 v2    Value 1  Value 2              code
+-------------------------------------------------------------------------------
+
+</PRE></BODY></HTML>

@@ -1,0 +1,148 @@
+J/A+A/493/1183 Saturn major satellites observations (1874-2007) (Desmars+, 2009)
+================================================================================
+A new catalogue of observations of the eight major satellites of
+Saturn (1874-2007).
+    Desmars J., Vienne A., Arlot J-E.
+   <Astron. Astrophys. 493, 1183 (2009)>
+   =2009A&A...493.1183D
+================================================================================
+ADC_Keywords: Planets ; Positional data
+Keywords: catalogs - planets and satellites: individual: Saturn - astrometry
+
+Abstract:
+    The last catalogue of observations (Strugnell & Taylor,
+    1990A&AS...83..289S) includes about 51000 observations (over 3500
+    nights) of Saturnian satellites from 1874 to 1989. Since 1989, many
+    observations have been published, often in different format, specific
+    to the publication.
+
+    This new catalogue of observations of the eight major satellites of
+    Saturn includes the observations of Strugnell & Taylor
+    (1990A&AS...83..289S), many other published since 1989 and also old
+    observations forgotten in the previous catalogue. All those
+    observations are tabulated in the consistent format.
+    We precise, for each observation, the corrections applied for
+    reduction like refraction, aberration or phase effects. Furthermore,
+    when it was possible, instrument and catalogue are also indicated.
+    The new catalogue presents more than 130000 observations (over 6000
+    nights) of the eight major satellites of Saturn from 1874 to 2007.
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName   Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe         80        .   This file
+catalog.dat    99    59540   Catalogue of observations of Saturnian satellites
+obscodes.dat   81     1403   Observatory codes
+--------------------------------------------------------------------------------
+
+See also:
+ J/A+AS/139/305 : Position of Saturn's satellites (1982-1988) (Veiga+, 1999)
+ J/A+AS/121/65  : 1990-1994 Saturn's satellites astrometry (Harper+ 1997)
+ J/A+AS/136/257 : Saturn's satellites in 1995/97 (Harper+ 1999)
+ J/A+A/422/377  : 1997-2000 Saturn's satellites astrometry (Qiao+, 2004)
+ J/other/KFNT/15.483 : Positions of Phoebe in 1998 opp. (Ledovskaya+ 1999)
+ J/A+A/391/767  : CCD observations of Phoebe in 1998-1999 (Fienga+, 2002)
+ J/A+A/383/1054 : Astrometry of Pluto and Saturn in 1995-2001 (Rapaport+, 2002)
+ J/AJ/103/983   : Stellar occultation candidates of Saturn (Bosh+, 1992)
+ J/A+A/485/293  : Events of Saturn satellites during 2009 equinox (Arlot+, 2008)
+
+Byte-by-byte Description of file: catalog.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label   Explanations
+--------------------------------------------------------------------------------
+   1-  3  I3    ---     Opp     Opposition number (1)
+   5- 22  A18   ---     Date    UTC date of observation (YYYY/MM/DD.ddddddd).
+                                 Not light-time corrected
+  24- 29  F6.3  s       dt      ET-UTC (seconds)
+  31- 33  A3    ---     Obs     Observatory code (2)
+  35- 37  I3    ---     Ref     [1/608] Reference code
+      39  I1    ---     Type    [0/3] Observation type (3)
+      41  I1    ---     S       [1/8] Observed satellite (4)
+      42  A1    ---     Sr      [0-8 *] Reference satellite (4)
+      44  I1    ---   f_Obs1    [0/1] Presence flag for first observation (5)
+      45  I1    ---   f_Obs2    [0/1] Presence flag for second observation (5)
+  47- 58  F12.7 ---     Obs1    ?=0.0000000 First observation of pair,
+                                   RA, DRAcosDE, DRA or PA (6)
+  60- 71  F12.7 ---     Obs2    ?=0.0000000 Second observation of pair,
+                                   DE, DDE, DDE or Sep (6)
+      73  I1    ---     Sys     [0/4] Reference system (7)
+      75  I1    ---     Fr      [0/2] Reference frame (8)
+  77- 83  F7.3  arcsec  (O-C)1  ?=999.999 (O-C) residual for first pair of
+                                          observation (9)
+  85- 91  F7.3  arcsec  (O-C)2  ?=999.999 (O-C) residual for second pair of
+                                          observation (9)
+      93  I1    ---     rf      [0/3] Refraction correction (10)
+      95  I1    ---     ab      [0/3] Aberration correction (10)
+      97  I1    ---     ph      [0/3] Phase effects correction (10)
+      99  I1    ---     S2      [1/8]? (optionnal) reference satellite for
+                                       O-C computation (4)
+--------------------------------------------------------------------------------
+Note (1): Opposition number: 1 = 1610, 257 = 1874, 385 = 2007
+
+Note (2): From Minor Planet Center (code IAU)
+    http://cfa-www.harvard.edu/iau/lists/ObsCodes.html
+    See obscodes.dat file
+
+Note (3): Observation type as follows:
+      0 = {alpha}, {delta}  (degrees)
+      1 = {Delta}{alpha}*cos({delta}), {Delta}{delta} (arcsecond)
+      2 = {Delta}{alpha}, {Delta}{delta} (second, arcsecond)
+      3 = PA,Sep (position angle,separation) (degrees, arcsecond)
+
+Note (4): Reference satellite as follows:
+      * = absolute coordinates
+      0 = Saturn
+      1 = Mimas
+      2 = Enceladus
+      3 = Tethys
+      4 = Dione
+      5 = Rhea
+      6 = Titan
+      7 = Hyperion
+      8 = Iapetus
+
+Note (5): Presence flag as follows:
+      0 = observation missing
+      1 = observation present
+
+Note (6): The content is defined by observation type.
+      0.0000000 if presence flag = 0
+
+Note (7): Reference system as follows:
+      0 = mean equator and equinox of B1950
+      1 = true equator and equinox of date of the observation
+      2 = mean equator and equinox of J2000
+      3 = mean equator and equinox at the nearest beginning of a year
+      4 = mean equator and equinox at 1st January of the year of observation
+
+Note (8): Reference frame as follows:
+      0 = topocentric
+      1 = geocentric
+      2 = heliocentric (used for mutual events)
+
+Note (9): 999.999 if presence flag = 0;
+          888.888 if residual great than 100.0 arcsec
+
+Note (10): Correction code as follows:
+       0 = corrected
+       1 = presumedly corrected
+       2 = not presumedly corrected
+       3 = not corrected
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: obscodes.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1-  3  A3    ---     Code      Observatory code
+   5- 13  F9.5  deg     LON       ? East longitude
+  15- 22  F8.6  ---     cosLAT    ? Cosinus of latitude
+  24- 32  F9.6  ---     sinLAT    ? Sinus of latitude
+  34- 81  A48   ---     Name      Observatory name
+--------------------------------------------------------------------------------
+
+Acknowledgements:
+    Josselin Desmars, desmars(at)imcce.fr
+================================================================================
+(End)     Josselin Desmars [IMCCE, France], Patricia Vannier [CDS]  10-Oct-2008

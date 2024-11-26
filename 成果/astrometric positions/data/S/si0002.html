@@ -1,0 +1,79 @@
+<HTML><HEAD><TITLE>si0002</TITLE></HEAD><PRE>
+Contents.
+      planet: 6 - Saturn
+  satellites: S12-Helene:22
+total number: 22
+        type: relative
+       dates: 1985-1987
+ observatory: 874 - Itajuba (Laboratorio Nacional de Astrofisica)
+
+Reference.
+   Veiga C.H., Vieira Martins R. (2000)
+   Astrometric photographic observations of Helene.
+   Astron. Astrophys. Suppl. Ser. V. 143. P. 405.
+   <A HREF="../../../../cgi-bin/ObsArticleByCode.cgi?code=2000A&AS__143__405V">2000A&AS__143__405V</a>
+
+Informations.
+         relative to: S6-Titan: 22
+     reference frame: astrometric
+     centre of frame: topocentre
+    epoch of equinox: J2000
+          time scale: TT
+           reduction: no information
+         coordinates: X, Y
+    diff. refraction: no information
+            receptor: photographic
+           telescope: no information
+           observers: Veiga C.H., Vieira Martins R.
+ data included in standard data file: no
+
+Comments.
+            Abstract:
+            Astrometric photographic positions of the Saturnian
+            satellite Helene obtained from 22 plates taken in 6
+            nights are presented. The observations are distributed
+            between 5 missions in 1985 and 1987. All positions are
+            compared with those calculated by Jacobson (1999,
+            personal communication). The residuals have mean and
+            standard deviation smaller than 0.25" and 0.30"
+            respectively.
+          evaluation: The differences  O-C(X), O-C(Y) are published
+                      in the article. For these values one have:
+                                                     X        Y
+                      M. (mean)                    0.178"   -0.101"
+                      R.M.S. (root mean square)    0.434"    0.250"
+                      The differences  O-C(X)e, O-C(Y)e were also
+                      calculated by N.Emelianov with the theory by
+                      P. Oberty for Helene and with the theory by
+                      Harper & Taylor for Titan.
+                      With these O-C one have
+                                                     X        Y
+                      M. (mean)                   -0.087"   -0.181"
+                      R.M.S. (root mean square)    0.470"    0.536"
+
+Format.
+ Bytes Format Units   Label     Explanations
+-----------------------------------------------------------------
+ 1-  4  I4    yr      Obs.Y     Year of the mean instant
+                                of observation
+     6  I1    ---     Obs.M     Month of the mean instant
+                                of observation
+ 8- 15  F8.5  d       Obs.D     Decimal day of the mean instant
+                                of observation
+17- 24  F8.3  arcsec  X         Differential topocentric
+                                coordinate, {Delta}RAcosDE (1)
+26- 32  F7.3  arcsec  Y         Differential topocentric
+                                coordinate, {Delta}DE (1)
+34- 39  F6.3  arcsec  (O-C)X    Observed minus calculated
+                                value of X
+41- 46  F6.3  arcsec  (O-C)Y    Observed minus calculated
+                                value of Y
+-----------------------------------------------------------------
+Note (1): Differential topocentric coordinates are referred to
+          Titan.  The reference system is defined by the mean
+          equator and equinox J2000
+----------------------------------------------
+Obs.Y  Obs.D       X       Y     (O-C)X (O-C)Y
+    Obs.M        arcsec  arcsec  arcsec arcsec
+----------------------------------------------
+</PRE></BODY></HTML>

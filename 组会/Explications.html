@@ -1,0 +1,302 @@
+<html>
+<head>
+  <title>Explications
+  </title>
+  <meta http-equiv="Content-Type" content="text/html">
+  <link rel='stylesheet' href='stylenss.css' type='text/css'>
+  <script language="Javascript" src="site.js">
+  </script>
+  <style type="text/css">
+  </style>
+</head>
+<body>
+<b class="texte3">
+<FONT COLOR="#FF0000">
+Attention! New window... <br>
+</FONT>
+Explications of the type of output data <br>
+</b>
+<p>
+<table class="texte3plus" WIDTH="660" border="1" cellspacing="0" cellpadding="1">
+  <tr>
+    <td width="300" ALIGN="right"><b>Designations on the page</b></td>
+    <td width="340" ALIGN="left"><b>Explications</b></td>
+  </tr>
+  <tr>
+    <td width="300" ALIGN="right">
+       Alpha, Delta (h, m, s.decimals)
+    </td>
+    <td width="340" ALIGN="left">
+     Alpha, Delta -- astrometric geocentric (or topocentric) right ascension
+            and declination of satellite. 
+    </td>
+  </tr>
+  <tr>
+    <td width="300" ALIGN="right">
+       Diff. X, Y (arcsec)
+    </td>
+    <td width="340" ALIGN="left">
+    X=&#916;(Alpha)*cos(Delta), Y=&#916;(Delta) -- projections of apparent arc between 
+            satellite and its reference body onto the celestial parallel and celestial
+            meridian mutually intersecting in the reference body. 
+    </td>
+  </tr>
+  <tr>
+    <td width="300" ALIGN="right">
+       Diff. S(arcsec), Position angle (degrees)
+    </td>
+    <td width="340" ALIGN="left">
+       Differential: S - apparent angular separation between the selected satellite
+       and its reference body, Position angle, counted from North towards East.
+    </td>
+  </tr>
+  <tr>
+    <td width="300" ALIGN="right">
+       Diff. Inclination (deg), A, B (arcsec)
+    </td>
+    <td width="340" ALIGN="left">
+       Rotated differential coordinates: 
+       Inclinaiton (I) - position angle of
+       the apparent north pole of the planet,
+       X=A&#183;cos I + B&#183;sin I, 
+       Y=-A&#183;sin I + B&#183;cos I , where X, Y are defined as 
+       differential X=&#916;(Alpha)*cos(Delta), Y=&#916;(Delta).
+    </td>
+  <tr>
+    <td width="300" ALIGN="right">
+       Tang. X, Y (arcsec)
+    </td>
+    <td width="340" ALIGN="left">
+       Tangential coordinates measured on the tangent plane
+       of the celestial sphere at the point of reference body.
+       X is measured to the east, Y - to the north.
+    </td>
+  </tr>
+  <tr>
+    <td width="300" ALIGN="right">
+       Tang. S(arcsec), Position angle (degrees)
+    </td>
+    <td width="340" ALIGN="left">
+       Tangential: S=sqrt(X^2+Y^2), Position angle P is defined by
+       tg(P)=Y/X , where X, Y are defined as tangential coordinates.
+    </td>
+  </tr>
+  <tr>
+    <td width="300" ALIGN="right">
+       Tang. Inclination (deg), A, B (arcsec)
+    </td>
+    <td width="340" ALIGN="left">
+       Rotated tangential coordinates: 
+       Inclinaiton (I) - position angle of
+       the apparent north pole of the planet,
+       X=A&#183;cos I + B&#183;sin I, 
+       Y=-A&#183;sin I + B&#183;cos I ,
+       where X, Y are defined as tangential coordinates.
+    </td>
+  </tr>
+  <tr>
+    <td width="300" ALIGN="right">
+       Delta(Alpha), Delta(Delta) (arcsec)
+    </td>
+    <td width="340" ALIGN="left">
+    The differences in right ascensions and
+    declinations of satellite and reference body (i.e. the body with reference to which
+    the ephemerides are calculated). 
+    </td>
+  </tr>
+  <tr>
+    <td width="300" ALIGN="right">
+       Pseudo-heliocentric X, Y
+    </td>
+    <td width="340" ALIGN="left">
+    For modelling mutual eclipses of two satellites, the values
+            X=&#916;(Alpha)*cos(Delta) and Y=&#916;(Delta) may be given out which are the
+            projections of the heliocentric arc between eclipsing and eclipsed satellites onto
+            the corresponding
+            heliocentric celestial parallel and meridian for the date of geocentric phenomenon. 
+       The calculations take into account the light time between 
+       eclipsing and eclipsed satellites and the light time between the eclipsed satellite
+       and an observer on the Earth.
+       The units are arcseconds.
+       Epoch of equator and equinox J2000 only.
+    </td>
+  </tr>
+  <tr>
+    <td width="300" ALIGN="right">
+       Pseudo-heliocentric S, Position angle
+    </td>
+    <td width="340" ALIGN="left">
+       For modelling mutual occultations of two satellites,
+       pseudo-heliocentric differential coordinates
+       may be given: 
+       S - heliocentric angular separation (arcsec) between occulting and occulted satellites,
+       Position angle (degrees) of the eclipsing satellite relative to the eclipsed satellite, 
+       counted from North towards East.
+       Epoch of equator and equinox J2000 only.
+    </td>
+  </tr>
+  <tr>
+    <td width="300" ALIGN="right">
+       x, y, z, Vx, Vy, Vz Geo-equatorial
+    </td>
+    <td width="340" ALIGN="left">
+    Rectangular planetocentric coordinates of satellite referred to the
+    geoequatorial reference frame. For the majority of satellites the corresponding
+    components of velocity are also given out. The units are always kilometres and
+    kilometres per day. 
+       No light time.
+       Epoch of equator and equinox J2000 or B1950 only.
+       Coordinates may be centered at choosen reference satellite.
+    </td>
+  </tr>
+  <tr>
+    <td width="300" ALIGN="right">
+       x, y, z, Vx, Vy, Vz Geo-ecliptic
+    </td>
+    <td width="340" ALIGN="left">
+       Rectangular planetocentric coordinates of satellite referred to the
+       terrestrial ecliptic reference frame.
+       The units are kilometres and kilometres per day. 
+       No light time.
+       Epoch of equator and equinox J2000 only.
+       Coordinates may be centered at choosen reference satellite.
+    </td>
+  </tr>
+  <tr>
+    <td width="300" ALIGN="right">
+       x, y, z, Vx, Vy, Vz Geo-planetocentric
+    </td>
+    <td width="340" ALIGN="left">
+       Rectangular planetocentric coordinates of satellite referred to the
+       planetary equatorial reference frame with x-axis 
+       toward the ascending node of planet equator on the
+       terrestial one.
+       The units are kilometres and kilometres per day. 
+       No light time.
+       Epoch of equator and equinox J2000 only.
+       Coordinates may be centered at choosen reference satellite.
+     </td>
+  </tr>
+  <tr>
+    <td width="300" ALIGN="right">
+       R, Alpha, Delta Geo-planetocentric
+    </td>
+    <td width="340" ALIGN="left">
+       Planetocentric distance (km), right ascension and declination (degrees)
+       in the terrestrial equatorial reference frame.
+       No light time.
+       Epoch of equator and equinox J2000 only.
+       Coordinates may be centered at choosen reference satellite.
+    </td>
+  </tr>
+  <tr>
+    <td width="300" ALIGN="right">
+       Kepler osculat. orbit(geo-equat.)
+    </td>
+    <td width="340" ALIGN="left">
+    Elements of the osculating Keplerian orbit for the given date
+    in the terrestial equatorial reference frame. 
+    Mean motion (deg/day), semi-major axis (km), eccentricity, inclination, mean anomaly,
+    argument of pericenter, longitude of the ascending node are calculated
+    independently. Angular parameters are given out in degrees. For the satellites for
+    which components of planetocentric velocity are not calculated, the elements of the
+    Keplerian orbit are not calculated.
+       No light time.
+       Epoch of equator and equinox J2000 only.
+    </td>
+  </tr>
+  <tr>
+    <td width="300" ALIGN="right">
+       Kepler osculat. orbit(geo-eclipt.)
+    </td>
+    <td width="340" ALIGN="left">
+    Elements of the osculating Keplerian orbit for the given date
+    in the ecliptic reference frame. 
+    Mean motion (deg/day), semi-major axis (km), eccentricity, inclination, mean anomaly,
+    argument of pericenter, longitude of the ascending node are calculated
+    independently. Angular parameters are given out in degrees. For the satellites for
+    which components of planetocentric velocity are not calculated, the elements of the
+    Keplerian orbit are not calculated.
+       No light time.
+       Epoch of equator and equinox J2000 only.
+    </td>
+  </tr>
+  <tr>
+    <td width="300" ALIGN="right">
+       Kepler osculat. orbit(planeto-equat.)
+    </td>
+    <td width="340" ALIGN="left">
+    Elements of the osculating Keplerian orbit for the given date
+    in the planetary equatorial reference frame,
+       with x-axis toward the ascending node of planet equator on the
+       terrestial one.
+    Mean motion (deg/day), semi-major axis (km), eccentricity, inclination, mean anomaly,
+    argument of pericenter, longitude of the ascending node are calculated
+    independently. Angular parameters are given out in degrees. For the satellites for
+    which components of planetocentric velocity are not calculated, the elements of the
+    Keplerian orbit are not calculated.
+       No light time.
+       Epoch of equator and equinox J2000 only.
+    </td>
+  </tr>
+  <tr>
+    <td width="300" ALIGN="right">
+       Plan-equat.lat.,long.,sideral of sat.
+    </td>
+    <td width="340" ALIGN="left">
+       Sideral planetocentric latitude and longitude of the satellite 
+       upon the planetary equator. Longitude counted 
+       from  the ascending node of planet equator on the
+       terrestial one.
+       Angular parameters are given out in degrees.
+     </td>
+  </tr>
+  <tr>
+    <td width="300" ALIGN="right">
+       Plan-equat.lat.Earth.,lat.long.synodic of sat.
+    </td>
+    <td width="340" ALIGN="left">
+       Planetocentric latitude of the Earth upon the planetary equator,
+       sinodic planetocentric latitude and longitude of the satellite 
+       upon the planetary equator. Longitude counted 
+       from the projection of the planetocentric Earth direction
+       on the planet equator.
+       Angular parameters are given out in degrees.
+    </td>
+  </tr>
+  <tr>
+    <td width="300" ALIGN="right">
+       Plan-equat.lat.Sun,lat.long.heliocentr.of sat.
+    </td>
+    <td width="340" ALIGN="left">
+       Planetocentric latitude of the Sun upon the planetary equator,
+       planetocentric latitude and longitude of the satellite 
+       upon the planetary equator. Longitude counted 
+       from the projection of the planetocentric Sun direction
+       on the planet equator.
+       Angular parameters are given out in degrees.
+    </td>
+  </tr>
+  <tr>
+    <td width="300" ALIGN="right">
+       Topoc.alt.,azim.of sat.,alt.,azim.of the Sun
+    </td>
+    <td width="340" ALIGN="left">
+       Local topocentric elevation, azimuth and hour angle of the satellite,
+       elevation and azimuth of the Sun, Moon phase (0.0 for new Moon, 1.000 for full Moon).
+       Angular values are given out in degrees with an accuracy of 1 degree.
+    </td>
+  </tr>
+  <tr>
+    <td width="300" ALIGN="right">
+       Dist.Sun.-Plan.,app.plan.R,Phase,magn.of sat.
+    </td>
+    <td width="340" ALIGN="left">
+       Apparent topocentric distance Sun-Planet (degrees); 
+       apparent planetary radius (arcesec), phase angle (degrees),
+       satellite magnitude (V).
+    </td>
+  </tr>
+</table>
+</body>
+</html>

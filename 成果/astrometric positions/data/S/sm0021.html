@@ -1,0 +1,86 @@
+<HTML><HEAD><TITLE>sm0021</TITLE></HEAD><PRE>
+Contents.
+      planet: 6 - Saturn
+  satellites: S1-Mimas      : 73,
+              S2-Enceladus  :199,
+              S3-Tethys     :212,
+              S4-Dione      :204,
+              S5-Rhea       :225,
+              S6-Titan      :153,
+              S7-Hyperion   : 88,
+              S8-Iapetus    : 52
+total number: 278 (CCD frames)
+        type: relative
+       dates: 1990-1994
+ observatory: 950 - La Palma - 950
+
+Reference.
+   Harper D., Murray C.D., Beurle K., Williams I.P., Jones D.H.P.,
+   Taylor D.B., Greaves S.C. (1997)
+   CCD astrometry of Saturn's satellites 1990-1994.
+   Astron. Astrophys. Suppl. Ser. V. 121. P. 65.
+   <A HREF="../../../../cgi-bin/ObsArticleByCode.cgi?code=1997A&AS__121___65H">1997A&AS__121___65H</a>
+
+Informations.
+         relative to: Frame
+     reference frame: astrometric
+     centre of frame: geocentre
+    epoch of equinox: no information
+          time scale: UTC
+           reduction: no information
+         coordinates: CCD image pixels
+    diff. refraction: no information
+            receptor: CCD
+           telescope: 1-metre Jacobus Kapteyn Telescope
+           observers: Harper D., Murray C.D., Beurle K., Williams I.P.,
+                      Jones D.H.P., Taylor D.B., Greaves S.C.
+ data included in standard data file: no
+
+Comments. 
+            Total number: 278 (CCD frames) 
+            On the 278 lines of the data-file are put the 1206
+                      positions of the satellites on the CCD frame.
+            Individual files can be fetched directly from:
+            ftp://cdsarc.u-strasbg.fr/cats/J/A+AS/121/65
+            The catalogue can be queried from:
+            http://vizier.u-strasbg.fr/cgi-bin/VizieR?-source=J/A+AS/121/65
+          evaluation: From abstract: Analysis of the data as inter-satellite
+                      positions shows that the observations of Tethys, Dione,
+                      Rhea and Titan have root-mean-square residuals
+                      of 0.08 arcseconds, corresponding to 500km at the
+                      distance of Saturn.
+
+Format.
+ Byte-by-byte Description of file: *dat.txt
+ -----------------------------------------------------------------------------
+   Bytes Format Units  Label    Explanations
+ -----------------------------------------------------------------------------
+   1-  4  I4    yr     OBS.Y    Year of the observation (1)
+   6-  7  I2   "month" OBS.M    Month of the observation (1)
+   9- 17  F9.6  d      OBS.D    Day of the observation (1)
+  19- 23  F5.1  s      Exp      Length of the exposure; add half of this value
+                                 to the start date to obtain the mid-exposure
+                                 time
+  25- 32 8I1    ---    Boo      [0/1] Boolean flags indicating presence (1)
+                                 or absence (0) of each satellite in the image
+  33- 40  F8.2  pix    xiMimas  ? Column coordinate xi of Mimas, if present
+  41- 48  F8.2  pix    etaMimas ? Row coordinate eta of Mimas, if present
+  49- 56  F8.2  pix    xiEnc    ? Column coordinate xi of Enceladus,if present
+  57- 64  F8.2  pix    etaEnc   ? Row coordinate eta of Enceladus, if present
+  65- 72  F8.2  pix    xiTethys ? Column coordinate xi of Tethys, if present
+  73- 80  F8.2  pix   etaTethys ? Row coordinate eta of Tethys, if present
+  81- 88  F8.2  pix    xiDione  ? Column coordinate xi of Dione, if present
+  89- 96  F8.2  pix    etaDione ? Row coordinate eta of Dione, if present
+  97-104  F8.2  pix    xiRhea   ? Column coordinate xi of Rhea, if present
+ 105-112  F8.2  pix    etaRhea  ? Row coordinate eta of Rhea, if present
+ 113-120  F8.2  pix    xiTitan  ? Column coordinate xi of Titan, if present
+ 121-128  F8.2  pix    etaTitan ? Row coordinate eta of Titan, if present
+ 129-136  F8.2  pix    xiHyp    ? Column coordinate xi of Hyperion, if present
+ 137-144  F8.2  pix    etaHyp   ? Row coordinate eta of Hyperion, if present
+ 145-152  F8.2  pix    xiIap    ? Column coordinate xi of Iapetus, if present
+ 153-160  F8.2  pix    etaIap   ? Row coordinate eta of Iapetus, if present
+ -----------------------------------------------------------------------------
+ Note (1): The year, month and day give U.T.C. time of the start
+ of the exposure
+ ------------------------------------------------------------------------
+</PRE></BODY></HTML>

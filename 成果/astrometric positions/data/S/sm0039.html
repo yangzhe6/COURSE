@@ -1,0 +1,83 @@
+<HTML><HEAD><TITLE>sm0039</TITLE></HEAD><PRE>
+Contents.
+      planet: 6 - Saturn
+  satellites: S1-Mimas    :  216
+              S2-Enceladus:  865
+              S3-Tethys   : 2151
+              S4-Dione    : 1466
+              S6-Titan    :  460
+              S7-Hiperion :  324
+              S8-Iapetus  :  524
+total number: 6006
+        type: relative
+       dates: 1995-1995
+ observatory: 874 - Itajuba
+
+Reference.
+ Vienne A., Thuillot W., Veiga C.H. et al (2001) 
+ Saturnian satellite observations made in Brazil during the 1995 
+ opposition with an astrometric analysis.
+ Astronomy and Astrophysics. V. 380. P. 727.
+ <A HREF="../../../../cgi-bin/ObsArticleByCode.cgi?code=2001AeA___380__727V">2001AeA___380__727V</a>
+
+Informations.
+         relative to: S4-Dione    :  436
+                      S5-Rhea     : 4196
+                      S6-Titan    : 1374
+     reference frame: astrometric
+     centre of frame: geocentre
+    epoch of equinox: J2000
+          time scale: UTC
+           reduction: see reference
+         coordinates: X, Y
+    diff. refraction: no information
+            receptor: CCD
+           telescope: Ritchey-Chretien reflector, D=1.6 m, F=15.8 m 
+           observers: Veiga C.H.
+ data included in standard data file: no
+
+Comments.
+
+Format.
+ In a FORTRAN code, one line is read with the format:
+ (i3,i5,i3,f11.7,f7.3,2i4,i2,1x,a2,a1,i2,i1,
+ 2(1x,f13.7),2i2,2(1x,f7.3),3i3,2f10.3)
+ The meanings of each parameter can be found in (Strugnell & Taylor
+ 1990), but we recall them below with eventually, in parenthesis,
+ the differences with the original meaning:
+ * opp: opposition number, 1=1874 to 118=1995.
+ * year,m,utc: year, month and utc date of the observation (one more
+   digit for utc: f11.7)
+ * tt-utc: TT-UTC in seconds (two more digits: f7.3)
+ * obs: UAI observatory code from the Minor Planet Center,
+ * ref: reference code of the catalog (we have chosen 301 for the present
+   observations)
+ * t.: observation type.
+   0=\alpha, \delta,
+   1=\Delta \alpha \cos \delta, \Delta \delta,
+   2=\Delta \alpha,\Delta \delta,
+   3=position angle, separation
+ * obj.: subject satellite, reference satellite. 0 for Saturn, 1 to
+   8 for S1 to S8 (* when there is no reference satellite that is for
+   observation type 0 , C for the center of the plate which is not
+   a physical object)
+ * fl.: flags of presence of the first and second coordinates
+ * obs1, obs2 : first and second coordinates (one more digit, it is
+   0 when the coordinate is not present, see fl.)
+ * s: reference system. 0=mean equator and equinox B1950, 1=true equator
+   and equinox of date of observation, 2=mean equator and equinox of
+   J2000
+ * f: reference frame. 0=topocentric, 1=geocentric, 2=heliocentric
+ * o-c1, o-c2: residuals of observations in arc-seconds (computed with
+   TASS1.7 and with the format f7.3, it is 999.999 when the residuals
+   are not computed and it is 888.888 when the residuals are greater
+   than 100. in absolute value).
+ * (r: the number of the satellite used as reference in the computation
+   of o-c)
+ * (-: no meaning in this series, index reserved)
+ * (s: the number of the series, the scale and orientation are the same
+   for all the observations of one series).
+ * (xpix,ypix: original coordinates in pixels)
+
+-------------------------------------------------------------------------------
+</PRE></BODY></HTML>
